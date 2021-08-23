@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width,initial-scale=1")
+        title To Do List
+        //-   Normalize 
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
+        //- Font Awesome
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css")
+        //- Google Font
+        link(href="https://fonts.googleapis.com/css?family=Klee+One:regular,600", rel="stylesheet")
+        //-  Style 
+        link(rel="stylesheet", href="../css/style.css")
+        //-  Script 
+        script(src="./js/app.js", defer)
+        //-  SEO meta tags 
+        meta(name="author", content="Lester Howard")
+        meta(name="description", content="Add, delete and categorize from to-do list and make it possible to remember your daily routine ")
+    body 
+        .container
+            .todo
+                h1.todo__title To do list
+                .addtodo
+                    .addtodo__categories
+                        //- .addtodo__item
+                        //-     |Tareas completadas
+                        //-     span.addtodo__count  0
+                    form.addtodo__form
+                        input.addtodo__add(type="search", placeholder="Press \"Enter\" to create...")
+                        select.addtodo__selection
+                            //- option.addtodo__option(selected)
+                            //-     |Studies
+                        .addtodo__background
+                .viewtodo
+                    ul.viewtodo__list
+                        //- li.viewtodo__item
+                        //-     input(type="checkbox").viewtodo__checkbox
+                        //-     p.viewtodo__title Wash the clothes
+                        //-     i.viewtodo__delete.fas.fa-times

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Klee+One:regular,600" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="./js/app.js" defer></script>
+    <meta name="author" content="Lester Howard">
+    <meta name="description" content="Add, delete and categorize from to-do list and make it possible to remember your daily routine">
+  </head>
+  <body> 
+    <div class="container">
+      <div class="todo">
+        <h1 class="todo__title">To do list</h1>
+        <div class="addtodo">
+          <div class="addtodo__categories"></div>
+          <form class="addtodo__form">
+            <input class="addtodo__add" type="search" placeholder="Press &quot;Enter&quot; to create...">
+            <select class="addtodo__selection"></select>
+            <div class="addtodo__background"></div>
+          </form>
+        </div>
+        <div class="viewtodo">
+          <ul class="viewtodo__list"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
